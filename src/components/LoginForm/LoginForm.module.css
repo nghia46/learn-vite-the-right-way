@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  width: 900px;          /* tổng chiều rộng cả 2 khối */
+  max-width: 90vw;
+  margin: 100px auto;
+  border-radius: 12px;
+  overflow: hidden;       /* để bo góc "ăn" luôn vào ảnh bên trong */
+  background-color: #2c2638;
+}
+
+.coverImage {
+  width: 50%;
+  height: 500px;          /* chiều cao cố định để object-fit hoạt động */
+  object-fit: cover;
+  display: block;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.inputGroup {
+  width: 50%;
+  gap: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* canh giữa form theo chiều dọc so với ảnh */
+}
+
+.inputGroup .checkboxGroup {
+  display: flex;
+  gap: 0.1rem;
+  align-items: center;
+}
+.or {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 1rem 0 0 0;
+}
+
+.or::before,
+.or::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #9ca3af;
+}
+
+.or::before {
+  margin-right: 12px;
+}
+
+.or::after {
+  margin-left: 12px;
+}
