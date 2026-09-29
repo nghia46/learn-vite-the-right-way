@@ -1,10 +1,10 @@
 import { useState } from "react";
-import Button from "../Button";
 import styles from "./LoginForm.module.css";
-import { login } from "../../services/auth.service";
-import Input from "../Input";
 import { GoogleLogin } from "@react-oauth/google";
 import { Link } from "react-router-dom";
+import { login } from "@/services/auth.service";
+import Input from "@/components/ui/Input";
+import Button from "@/components/ui/Button";
 type UserLogin = {
   email: string;
   password: string;
@@ -40,7 +40,7 @@ function LoginForm() {
         />
         <Input
           type="password"
-          size="large"  
+          size="large"
           lable="Password"
           placeHolder="Enter password"
           onChange={(e) =>

@@ -1,9 +1,10 @@
 import { useState } from "react";
-import Button from "../Button";
 import styles from "./RegisterForm.module.css";
-import Input from "../Input";
 import { Link } from "react-router-dom";
 import { GoogleLogin } from "@react-oauth/google";
+import Input from "@/components/ui/Input";
+import Button from "@/components/ui/Button";
+
 type UserRegister = {
   username: string;
   email: string;
@@ -16,6 +17,7 @@ function RegisterForm() {
     username: "",
     password: "",
   });
+  
   const [confirmPassword, setConfirmPassword] = useState("");
 
   const handleRegister = async (e: React.SubmitEvent<HTMLFormElement>) => {
