@@ -32,7 +32,7 @@ function LoginForm() {
         <Input
           type="text"
           size="large"
-          lable="Email"
+          label="Email"
           placeHolder="Enter email"
           onChange={(e) =>
             setUserLogin({ ...userLogin, email: e.target.value })
@@ -41,7 +41,7 @@ function LoginForm() {
         <Input
           type="password"
           size="large"
-          lable="Password"
+          label="Password"
           placeHolder="Enter password"
           onChange={(e) =>
             setUserLogin({ ...userLogin, password: e.target.value })

@@ -41,7 +41,7 @@ function RegisterForm() {
 
         <Input
           type="email"
-          lable="Email"
+          label="Email"
           size="large"
           placeHolder="Enter email"
           onChange={(e) =>
@@ -50,7 +50,7 @@ function RegisterForm() {
         />
         <Input
           type="text"
-          lable="Username"
+          label="Username"
           size="large"
           placeHolder="Enter username"
           onChange={(e) =>
@@ -59,7 +59,7 @@ function RegisterForm() {
         />
         <Input
           type="password"
-          lable="Password"
+          label="Password"
           size="large"
           placeHolder="Enter password"
           onChange={(e) =>
@@ -68,7 +68,7 @@ function RegisterForm() {
         />
         <Input
           type="password"
-          lable="Confirm Password"
+          label="Confirm Password"
           size="large"
           placeHolder="Enter confirm password"
           onChange={handleConfirmPassword}

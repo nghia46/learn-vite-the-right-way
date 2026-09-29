@@ -7,7 +7,7 @@ type InputSize = "small" | "medium" | "large";
 interface InputProps {
   type?: "text" | "password" | "email";
   placeHolder?: string;
-  lable?: string;
+  label?: string;
   variant?: InputVariant;
   size?: InputSize;
   disabled?: boolean;
@@ -17,7 +17,7 @@ interface InputProps {
 
 function Input({
   type = "text",
-  lable,
+  label,
   size = "medium",
   variant = "primary",
   disabled = false,
@@ -26,9 +26,9 @@ function Input({
 }: InputProps) {
   return (
     <div className={styles.inputContainer}>
-      {lable && (
-        <label className={styles.lable}>
-          {lable}
+      {label && (
+        <label className={styles.label}>
+          {label}
         </label>
       )}
 
