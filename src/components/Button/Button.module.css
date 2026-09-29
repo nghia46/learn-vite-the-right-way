@@ -1,3 +1,26 @@
+/* ===== Colors ===== */
+:root {
+  --button-primary: #6d54b5;
+  --button-primary-hover: #5b3fa1;
+
+  --button-secondary: #e5e7eb;
+  --button-secondary-hover: #d1d5db;
+  --button-secondary-text: #1f2937;
+
+  --button-danger: #dc2626;
+  --button-danger-hover: #b91c1c;
+
+  --button-success: #16a34a;
+  --button-success-hover: #15803d;
+
+  --button-warning: #f59e0b;
+  --button-warning-hover: #d97706;
+  --button-warning-text: #1f2937;
+
+  --button-white: #ffffff;
+}
+
+/* ===== Base ===== */
 .button {
   width: 100%;
   height: 44px;
@@ -14,41 +37,51 @@
   cursor: not-allowed;
 }
 
+/* ===== Primary ===== */
 .primary {
-  background-color: #4f46e5;
+  background-color: var(--button-primary);
 }
+
 .primary:hover:not(:disabled) {
-  background-color: #4338ca;
+  background-color: var(--button-primary-hover);
 }
 
+/* ===== Secondary ===== */
 .secondary {
-  background-color: #e5e7eb;
-  color: #1f2937;
+  background-color: var(--button-secondary);
+  color: var(--button-secondary-text);
 }
+
 .secondary:hover:not(:disabled) {
-  background-color: #d1d5db;
+  background-color: var(--button-secondary-hover);
 }
 
+/* ===== Danger ===== */
 .danger {
-  background-color: #dc2626;
-  color: #ffffff;
+  background-color: var(--button-danger);
+  color: var(--button-white);
 }
+
 .danger:hover:not(:disabled) {
-  background-color: #b91c1c;
+  background-color: var(--button-danger-hover);
 }
 
+/* ===== Success ===== */
 .success {
-  background-color: #16a34a;
-  color: #ffffff;
-}
-.success:hover:not(:disabled) {
-  background-color: #15803d;
+  background-color: var(--button-success);
+  color: var(--button-white);
 }
 
-.warning {
-  background-color: #f59e0b;
-  color: #1f2937;
+.success:hover:not(:disabled) {
+  background-color: var(--button-success-hover);
 }
+
+/* ===== Warning ===== */
+.warning {
+  background-color: var(--button-warning);
+  color: var(--button-warning-text);
+}
+
 .warning:hover:not(:disabled) {
-  background-color: #d97706;
+  background-color: var(--button-warning-hover);
 }

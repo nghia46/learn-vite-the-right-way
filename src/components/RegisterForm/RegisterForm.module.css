@@ -5,9 +5,9 @@
   width: 50%;
   padding: 2rem;
 
-  max-width: 500px;
-
   margin: 0 auto;
+
+  max-width: 500px;
 
   display: flex;
   flex-direction: column;
@@ -58,7 +58,8 @@
 .or::after {
   margin-left: 12px;
 }
-.registerLink{
+
+.loginLink{
   text-align: center;
   font-size: 13px;
   font-weight: 500;
