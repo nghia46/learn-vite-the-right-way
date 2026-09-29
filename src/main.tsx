@@ -11,7 +11,7 @@ import "./styles/globals.css";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
-      <GoogleOAuthProvider clientId="847519970525-4cirgo2dso9ao88fdash9fcvio927lgi.apps.googleusercontent.com">
+      <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID}>
         <App />
       </GoogleOAuthProvider>
     </BrowserRouter>
